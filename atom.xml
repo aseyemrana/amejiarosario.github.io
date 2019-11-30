@@ -252,9 +252,9 @@ The trick here is that the promise removes itself from the queue when it is done
       <category term="Coding" scheme="https://adrianmejia.com/categories/coding/"/>
     
     
-      <category term="nodejs" scheme="https://adrianmejia.com/tags/nodejs/"/>
-    
       <category term="javascript" scheme="https://adrianmejia.com/tags/javascript/"/>
+    
+      <category term="nodejs" scheme="https://adrianmejia.com/tags/nodejs/"/>
     
       <category term="tutorial_async-javascript" scheme="https://adrianmejia.com/tags/tutorial-async-javascript/"/>
     
@@ -353,9 +353,9 @@ Let’s say we want to see all the directories on a given folder:</p>
       <category term="Coding" scheme="https://adrianmejia.com/categories/coding/"/>
     
     
-      <category term="nodejs" scheme="https://adrianmejia.com/tags/nodejs/"/>
-    
       <category term="javascript" scheme="https://adrianmejia.com/tags/javascript/"/>
+    
+      <category term="nodejs" scheme="https://adrianmejia.com/tags/nodejs/"/>
     
       <category term="tutorial_async-javascript" scheme="https://adrianmejia.com/tags/tutorial-async-javascript/"/>
     
@@ -487,9 +487,9 @@ File size#3: 523 MB</code></pre><p>Wow! Totally random! 🤯</p>
       <category term="Coding" scheme="https://adrianmejia.com/categories/coding/"/>
     
     
-      <category term="nodejs" scheme="https://adrianmejia.com/tags/nodejs/"/>
-    
       <category term="javascript" scheme="https://adrianmejia.com/tags/javascript/"/>
+    
+      <category term="nodejs" scheme="https://adrianmejia.com/tags/nodejs/"/>
     
       <category term="tutorial_async-javascript" scheme="https://adrianmejia.com/tags/tutorial-async-javascript/"/>
     
@@ -1564,9 +1564,9 @@ One should definitely mention the vue.js docs for basics.
       <category term="Vue" scheme="https://adrianmejia.com/categories/coding/web-development/vue/"/>
     
     
-      <category term="todo app" scheme="https://adrianmejia.com/tags/todo-app/"/>
-    
       <category term="javascript" scheme="https://adrianmejia.com/tags/javascript/"/>
+    
+      <category term="todo app" scheme="https://adrianmejia.com/tags/todo-app/"/>
     
       <category term="vuejs" scheme="https://adrianmejia.com/tags/vuejs/"/>
     
@@ -4990,9 +4990,9 @@ You can fix that by making all the variables that are used on the template <code
       <category term="Angular" scheme="https://adrianmejia.com/categories/coding/web-development/angular/"/>
     
     
-      <category term="todo app" scheme="https://adrianmejia.com/tags/todo-app/"/>
-    
       <category term="angular" scheme="https://adrianmejia.com/tags/angular/"/>
+    
+      <category term="todo app" scheme="https://adrianmejia.com/tags/todo-app/"/>
     
   </entry>
   
@@ -5413,9 +5413,9 @@ In the following sections, you are going to learn how to do that using <code>exp
       <category term="Angular" scheme="https://adrianmejia.com/categories/coding/web-development/angular/"/>
     
     
-      <category term="angularjs" scheme="https://adrianmejia.com/tags/angularjs/"/>
-    
       <category term="javascript" scheme="https://adrianmejia.com/tags/javascript/"/>
+    
+      <category term="angularjs" scheme="https://adrianmejia.com/tags/angularjs/"/>
     
   </entry>
   
@@ -6447,7 +6447,7 @@ Is NOT working? take a look at the <a href="https://github.com/amejiarosario/tod
 <h2 id="AngularJS-Scope">AngularJS Scope<a href="#AngularJS-Scope" class="headerlink" title="AngularJS Scope"></a></h2><p><code>$scope</code> it is an object that contains all the data to which HTML is bound. They are the glue your javascript code (controllers) and the view (HTML). Everything that is attached to the <code>$scope</code>, it is  <code>$watch</code>ed by AngularJS and updated.</p>
 <p>Scopes can be bound to javascript functions. Also, you could have more than one <code>$scope</code> and inherit from outer ones. More on this, in the controller’s section.</p>
 <h2 id="AngularJS-Controllers">AngularJS Controllers<a href="#AngularJS-Controllers" class="headerlink" title="AngularJS Controllers"></a></h2><p>Angular.js <strong>controllers</strong> are code that “controls” certain sections containing DOM elements. They encapsulate the behavior, callbacks and glue <code>$scope</code> models with views. Let’s see an example to drive the concept home:</p>
-<figure class="highlight html"><figcaption><span>AngularJS Controller Example</span><a href="http://codepen.io/amejiarosario/pen/spuCm" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-controller</span>=<span class="string">"TodoController"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"todo in todos"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">ng-model</span>=<span class="string">"todo.completed"</span>&gt;</span></span><br><span class="line">      &#123;% raw  %&#125;&#123;&#123; todo.name &#125;&#125;&#123;% endraw %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    function TodoController($scope)&#123;</span></span><br><span class="line"><span class="undefined">      $scope.todos = [</span></span><br><span class="line"><span class="undefined">        &#123; name: 'Master HTML/CSS/Javascript', completed: true &#125;,</span></span><br><span class="line"><span class="undefined">        &#123; name: 'Learn AngularJS', completed: false &#125;,</span></span><br><span class="line"><span class="undefined">        &#123; name: 'Build NodeJS backend', completed: false &#125;,</span></span><br><span class="line"><span class="undefined">        &#123; name: 'Get started with ExpressJS', completed: false &#125;,</span></span><br><span class="line"><span class="undefined">        &#123; name: 'Setup MongoDB database', completed: false &#125;,</span></span><br><span class="line"><span class="undefined">        &#123; name: 'Be awesome!', completed: false &#125;,</span></span><br><span class="line"><span class="undefined">      ]</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><figcaption><span>AngularJS Controller Example</span><a href="http://codepen.io/amejiarosario/pen/spuCm" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-controller</span>=<span class="string">"TodoController"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">ng-repeat</span>=<span class="string">"todo in todos"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">ng-model</span>=<span class="string">"todo.completed"</span>&gt;</span></span><br><span class="line">      &#123;% raw  %&#125;&#123;&#123; todo.name &#125;&#125;&#123;% endraw %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">TodoController</span>(<span class="params">$scope</span>)</span>&#123;</span></span><br><span class="line"><span class="undefined">      $scope.todos = [</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">'Master HTML/CSS/Javascript'</span>, <span class="attr">completed</span>: <span class="literal">true</span> &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">'Learn AngularJS'</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">'Build NodeJS backend'</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">'Get started with ExpressJS'</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">'Setup MongoDB database'</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span></span><br><span class="line"><span class="javascript">        &#123; <span class="attr">name</span>: <span class="string">'Be awesome!'</span>, <span class="attr">completed</span>: <span class="literal">false</span> &#125;,</span></span><br><span class="line"><span class="undefined">      ]</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>AngularJS controller interactive example:</p>
 <p data-height="268" data-theme-id="0" data-slug-hash="spuCm" data-default-tab="result" data-user="amejiarosario" class="codepen">See the Pen <a href="http://codepen.io/amejiarosario/pen/spuCm/" target="_blank" rel="noopener">spuCm</a> by Adrian Mejia (<a href="http://codepen.io/amejiarosario" target="_blank" rel="noopener">@amejiarosario</a>) on <a href="http://codepen.io" target="_blank" rel="noopener">CodePen</a>.</p>
