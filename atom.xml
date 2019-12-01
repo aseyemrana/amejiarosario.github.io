@@ -3994,17 +3994,20 @@ Expand:
 <p>For binary search, we have:</p>
 <p>n<sup>log<sub>b</sub>a</sup> = n<sup>log<sub>2</sub>1</sup> = n<sub>0</sub> = 1</p>
 <p>3) Finally, we compare the recursion runtime from step 2) and the runtime <code>f(n)</code> from step 1). Based on that, we have the following cases:</p>
-<h4 id="Case-1-Most-of-the-work-done-in-the-recursion"><strong>Case 1</strong>: Most of the work done in the recursion.<a href="#Case-1-Most-of-the-work-done-in-the-recursion" class="headerlink" title="Case 1: Most of the work done in the recursion."></a></h4><p>If <code>n<sup>log<sub>b</sub>a</sup></code> &gt; <code>f(n)</code>,</p>
+<p><strong><em>Case 1</em>: Most of the work done in the recursion.</strong></p>
+<p>If <code>n<sup>log<sub>b</sub>a</sup></code> &gt; <code>f(n)</code>,</p>
 <p><strong>then</strong> runtime is:</p>
 <blockquote>
 <p><i>O(n<sup>log<sub>b</sub>a</sup>)</i></p>
 </blockquote>
-<h4 id="Case-2-The-runtime-of-the-work-done-in-the-recursion-and-outside-is-the-same"><strong>Case 2</strong>: The runtime of the work done in the recursion and outside is the same<a href="#Case-2-The-runtime-of-the-work-done-in-the-recursion-and-outside-is-the-same" class="headerlink" title="Case 2: The runtime of the work done in the recursion and outside is the same"></a></h4><p>If <code>n<sup>log<sub>b</sub>a</sup></code> === <code>f(n)</code>,</p>
+<p><strong><em>Case 2</em>: The runtime of the work done in the recursion and outside is the same</strong></p>
+<p>If <code>n<sup>log<sub>b</sub>a</sup></code> === <code>f(n)</code>,</p>
 <p><strong>then</strong> runtime is:</p>
 <blockquote>
 <p><i>O(n<sup>log<sub>b</sub>a</sup> log(n))</i></p>
 </blockquote>
-<h4 id="Case-3-Most-of-the-work-is-done-outside-the-recursion"><strong>Case 3</strong>: Most of the work is done outside the recursion<a href="#Case-3-Most-of-the-work-is-done-outside-the-recursion" class="headerlink" title="Case 3: Most of the work is done outside the recursion"></a></h4><p>If <code>n<sup>log<sub>b</sub>a</sup></code> &lt; <code>f(n)</code>,</p>
+<p><strong><em>Case 3</em>: Most of the work is done outside the recursion</strong></p>
+<p>If <code>n<sup>log<sub>b</sub>a</sup></code> &lt; <code>f(n)</code>,</p>
 <p><strong>then</strong> runtime is:</p>
 <blockquote>
 <p><i>O(f(n))</i></p>
