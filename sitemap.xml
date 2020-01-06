@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://adrianmejia.com/List-tasks-in-npm-grunt-gulp-and-rake/</loc>
+    
+    <lastmod>2020-01-06T22:21:42.524Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://adrianmejia.com/support/index.html</loc>
     
     <lastmod>2019-11-29T22:52:56.254Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://adrianmejia.com/es/index.html</loc>
     
     <lastmod>2019-11-29T22:52:55.820Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://adrianmejia.com/List-tasks-in-npm-grunt-gulp-and-rake/</loc>
-    
-    <lastmod>2019-11-29T22:52:55.717Z</lastmod>
     
   </url>
   
